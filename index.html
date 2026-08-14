@@ -68,6 +68,55 @@
   .noteBlock:last-child { border-bottom: none; }
   .noteDay { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8A8478; margin-bottom: 4px; }
   .archiveHeader { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+
+  /* ============ تحسينات الجوال ============ */
+  @media (max-width: 768px) {
+    body { padding: 12px 8px; }
+    #app { border-radius: 20px; padding: 18px 14px; }
+    h1 { font-size: 22px; }
+    .header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .dateBadge { font-size: 11px; padding: 6px 12px; }
+    .quoteCard { padding: 22px 18px; border-radius: 18px; margin: 14px 0 18px; }
+    .quoteText { font-size: 13.5px; line-height: 1.9; }
+    .quoteSrc { font-size: 11px; }
+    .tabs { gap: 3px; padding: 4px; border-radius: 22px; }
+    .tabBtn { font-size: 11px; padding: 9px 3px; border-radius: 18px; }
+    .card { padding: 16px 14px; border-radius: 18px; margin-bottom: 14px; }
+    .sectionTitle { font-size: 13px; margin-bottom: 12px; }
+    input, select, textarea { font-size: 13px; padding: 10px 13px; border-radius: 16px; }
+    .addRowSecondary { gap: 8px; }
+    .addRowSecondary select { min-width: 80px; font-size: 12px; }
+    .addBtn { padding: 10px 16px; font-size: 12.5px; border-radius: 16px; justify-content: center; }
+    .fullInput { margin-bottom: 10px; }
+    .taskRow, .goalItemRow { gap: 9px; padding: 11px 13px; border-radius: 16px; }
+    .taskTitle { font-size: 13px; }
+    .checkbox { width: 20px; height: 20px; }
+    .catChip { font-size: 10px; padding: 3px 8px; }
+    .goalsGrid { grid-template-columns: 1fr; }
+    .list { max-height: none; }
+    .tallyRow { padding: 10px 14px; border-radius: 16px; gap: 5px; }
+    .tallyMark { width: 9px; height: 20px; }
+    .tallyLabel { font-size: 11px; }
+    .summaryGrid { flex-wrap: wrap; gap: 14px; }
+    .summaryNum { font-size: 20px; }
+    .summaryLabel { font-size: 11px; }
+    .totalsRow { gap: 14px; font-size: 12px; flex-wrap: wrap; }
+    .goalTop { font-size: 12px; }
+    .chartsRow { gap: 14px; }
+    canvas { max-width: 100% !important; }
+    .noteBlock { font-size: 12.5px; }
+    .archiveHeader { gap: 8px; }
+    .ghostBtn { font-size: 11px; padding: 6px 12px; }
+  }
+
+  @media (max-width: 400px) {
+    h1 { font-size: 19px; }
+    .tabBtn { font-size: 10px; }
+    .quoteText { font-size: 12.5px; }
+    .summaryNum { font-size: 18px; }
+    .addRowSecondary { flex-direction: column; }
+    .addRowSecondary select, .addBtn { width: 100%; }
+  }
 </style>
 </head>
 <body>
